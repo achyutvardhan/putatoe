@@ -1,0 +1,18 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
+:root{
+     --block-color : hsl(188, 78%, 41%);
+     --background-color : hsl(206, 7%, 98%);
+     --font-color-mob: hsl(188, 78%, 41%);
+     --font-color-des: hsl(206, 7%, 98%);
+
+
+     /* ========================font style========================  */
+      --font-family : 'Inter', sans-serif;
+      --font-l-weight : 700;
+      --font-s-weight : 500;
+      --font-l-size : 36px;
+      --font-s-size : 15px;
+      --line-height : 22px;
+      
+}
