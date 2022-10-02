@@ -1,0 +1,483 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap");
+:root {
+  --block-color: hsl(188, 78%, 41%);
+  --background-nav:hsl(188, 78%, 34%);
+  --background-color: hsl(206, 7%, 98%);
+  --font-color-mob: hsl(188, 78%, 41%);
+  --font-color-des: hsl(206, 7%, 98%);
+  --shadow-des: hsl(206, 7%, 98%);
+  /* hsl(206, 7%, 98%) */
+
+  /* ========================font style========================  */
+  --font-family: "Inter", sans-serif;
+  --font-l-weight: 700;
+  --font-s-weight: 500;
+  --font-l-size: 36px;
+  --font-s-size: 15px;
+  --line-height: 22px;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+#NewDiv {
+  position: relative;
+}
+
+.active {
+  color: #f45725;
+}
+
+.linkClass {
+  background-color: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  /* Track */
+  padding: 0px 20px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  /* Handle */
+  background: rgb(161, 161, 161);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  /* Handle on hover */
+  background: rgb(222, 222, 222);
+}
+
+#desNav {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 1750px;
+  width: 100%;
+  height: 120px;
+  background-color: var(--block-color);
+  box-shadow: 0px 4px 4px var(--block-color);
+  z-index: 3;
+}
+
+.con {
+  width: 100%;
+  height: 120px;
+  background-color: #fff;
+}
+
+.navmDiv {
+  display: flex;
+  justify-content: space-between;
+  color: var(--font-color-des);
+  width: 100%;
+  margin: 20px 40px;
+}
+
+.logo {
+  font-family: var(--font-family);
+  margin-left: 20px;
+  font-size: 30px;
+  line-height: 36px;
+  color: #fff;
+  text-shadow: 1px 0px 0.496831px var(--shadow-des);
+}
+
+.LogoDiv {
+  display: flex;
+  flex-direction: row;
+  margin-right: 5%;
+}
+
+.LogoDiv img {
+  width: 40px;
+  height: 40px;
+}
+.flex-logo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.stat-logo {
+  font-family: var(--font-family);
+  font-weight: var(--font-s-weight);
+  font-size: var(--font-s-size);
+  line-height: var(--line-height);
+}
+
+.listDiv {
+  width: 70%;
+}
+.space{
+opacity: 0;
+visibility: hidden;
+}
+#active-loc{
+      display: none;
+}
+#NavUl {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#NavUl li {
+  font-family: "Manrope", sans-serif;
+  list-style-type: none;
+  font-size: 19px;
+  line-height: 28px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#NavUl li:hover {
+  color: #f45725;
+}
+
+#search-box {
+  width: 250px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid var(--block-color);
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  font-family: var(--font-family);
+  font-size: var(--font-s-size);
+  font-weight: var(--font-s-size);
+  color: #f45725;
+  transition: width 1s;
+}
+#search-box:hover{
+      width: 350px;
+}
+.search-btn {
+  width: 3rem;
+  height: 2.5rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.search-btn:hover{
+      /* background-color: var(--block-color); */
+      width: 4rem;
+      background-color: #f45725;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+.image-space {
+  width: 2.5rem;
+  margin-left: 30px;
+}
+.login {
+  width: 150px;
+  height: 50px;
+  background-color: var(--background-color);
+  border: none;
+  border-radius: 10px;
+  color: var(--font-color-mob);
+  text-align: center;
+  font-family: var(--font-family);
+  font-weight: var(--font-l-weight);
+  font-size: var(--font-s-size);
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.login:hover{
+      background-color: #f45725;
+      color: #fff;
+      font-size: 20px;
+}
+#newLiTag {
+  position: relative;
+}
+
+#NavNewPtag {
+  margin-top: 20px;
+  color: #f45725;
+  width: 100%;
+  text-align: center;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+#NewDiv {
+  animation: bounce 0.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 8px, 0);
+  }
+}
+
+#newEvent {
+  animation: bounceMobo 0.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounceMobo {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(8px, 0, 0);
+  }
+}
+
+.ArrowDiv {
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.NavArrow {
+  width: 8px;
+  height: 8px;
+  border-style: solid;
+  border-width: 2.99227px 2.99227px 0px 0px;
+  transform: rotate(-45deg);
+}
+
+#NavMObo {
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color:var( --block-color);
+}
+
+#NavListMobo {
+  display: none;
+}
+
+/* @media only screen and (max-width: 900px) {
+  .listDiv {
+    width: 75%;
+  }
+} */
+
+@media only screen and (max-width: 800px) {
+  #NavUl li,
+  #NavNewPtag {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #NavUl li {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 853px) {
+  #desNav {
+    display: none;
+  }
+
+  .con {
+    height: 48px;
+  }
+ 
+  #flex-nav{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+  #NavMObo {
+    width: 100%;
+    position: fixed;
+    height: 48px;
+    display: flex;
+    z-index: 3;
+  }
+
+  #navMOboCon {
+    margin: 10px 20px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hamburger {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: all 0.3s;
+  }
+
+  .hamburger p {
+    background-color: transparent;
+    font-size: 24px;
+    margin-top: -7px;
+    transition: all 0.3s;
+  }
+
+  #bur1,
+  #bur2,
+  #bur3 {
+    border-radius: 5px;
+    background-color: #fff;
+    height: 2px;
+  }
+
+  #bur1 {
+    width: 100%;
+    margin-top: 4px;
+    margin-bottom: 5px;
+  }
+
+  #bur2 {
+    width: 75%;
+    margin-bottom: 5px;
+  }
+
+  #bur3 {
+    width: 50%;
+  }
+
+  .LogoDiv,
+  .LogoDiv img,
+  .logo {
+    background-color: transparent;
+  }
+
+  .LogoDiv {
+    align-items: center;
+  }
+
+  .LogoDiv img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .logo {
+    font-size: 24px;
+    line-height: 28.44px;
+  }
+
+  #Navdarkright {
+   display: flex;
+   flex-direction: row;
+   margin-right: 15px;
+  }
+
+  #NavListMobo {
+    font-family: "Manrope", sans-serif;
+    background-color: var(--block-color);
+    border-top: 2px solid #fff;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 48px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-100%);
+    transition: all 0.5s;
+    transition-delay: 0.3s;
+    z-index: 3;
+  }
+
+  #navtoggleDiv {
+    background-color: transparent;
+  }
+
+  #navtoggleDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .NavListMoboChild {
+    margin-left: 20px;
+    margin-top: 37px;
+    width: 80%;
+  }
+
+  .NavListMoboChild p {
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: var(--background-color);
+  }
+
+  .NewMoboList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .NavNewMobo {
+    margin-top: 7px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+ 
+  .image-space-mob{
+      margin-left: 20%;
+  }
+  #search-box{
+      width: 50%;
+  }
+#search-box:hover{
+      width: 80%;
+}
+}
+
+@media screen and (max-width:1222px) {
+      .space{
+            display: none;
+      }
+}
+@media screen and (max-width:1181px) {
+      #search-box{
+            width: 50%;
+      }
+      #search-box:hover{
+            width: 70%;
+      }
+}

@@ -8,19 +8,279 @@
 
     <!-- -----------------------------------------bootstrap CSS----------------------------------------------->
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"> -->
 
     <!-- ---------------------------------css--------------------------------------------->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
 
     <!-- ===================================js =====================================================   -->
-    <script src="./js/style.js" defer></script>
+    <script src="./js/navbar.js" defer></script>
+    <script src="./js/carousel.js" defer></script>
     <title>putatoe</title>
 </head>
 
 <body>
+    <div class="page">
 
+        <!-- ------desktop nav-------  -->
+        <nav id="desNav">
+            <div class="navmDiv">
+                <a href="/" class="linkClass">
+                    <div class="LogoDiv">
+                        <img src="https://www.putatoe.com/img/logo.png" alt="" />
+                        <div class="flex-logo">
+                            <p class="logo">PUTATOE</p>
+                            <p class="stat-logo">one solution</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="listDiv">
+                    <ul id="NavUl">
+                        <!-- class="linkClass"  -->
+                        <!-- class="active"  -->
+
+                        <div class="location" id="active-loc">
+
+                        </div>
+                        <div class="space">dark</div>
+                        <div class="search-box">
+
+                            <li id="newLiTag">
+                                <input type="search" name="" id="search-box" placeholder="search">
+                                <button type="submit" class="search-btn"><img src="./img//search (1).png" alt=""
+                                        width="15rem"></button>
+                            </li>
+                        </div>
+
+
+                        <div class="content">
+                            <a href="#" class="linkClass">
+                                <li>
+                                    <img src="./img/message.png" alt="" class="image-space" style="width:2.5rem ;">
+
+                                </li>
+                            </a>
+                            <a href="#" class="linkClass">
+                                <li>
+                                    <img src="./img/add-to-cart.png" alt="" class="image-space" style="width:2.5rem ;">
+
+                                </li>
+                            </a>
+                            <a href="#" class="linkClass">
+                                <li>
+                                    <img src="./img/notification-bell.png" alt="" class="image-space"
+                                        style="margin-right: 5px;">
+
+                                </li>
+                            </a>
+                        </div>
+
+                        <a href="#ContactUs" class="linkClass" id="ContactUsATag">
+                            <li><button class="login">Login</button></li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- mobo nav -->
+        <nav id="NavMObo">
+            <div id="navMOboCon">
+                <div id="navtoggleDiv" onclick="ToggleHam(event)">
+                    <div class="hamburger" id="ham">
+                        <div id="bur1"></div>
+                        <div id="bur2"></div>
+                        <div id="bur3"></div>
+                    </div>
+                </div>
+
+                <a href="/" class="linkClass" id="flex-nav">
+                    <div class="LogoDiv">
+                        <img src="https://www.putatoe.com/img/logo.png" alt="FEDLogoImg" />
+                        <p class="logo">PUTATOE</p>
+                    </div>
+                </a>
+
+                <div id="Navdarkright">
+                    <img src="./img/notification-bell.png" alt="" class="image-space-mob" style="width:2rem ;">
+                    <img src="./img/add-to-cart.png" alt="" class="image-space-mob" style="width:2rem ;">
+
+                </div>
+            </div>
+        </nav>
+
+        <!-- content on Nav -->
+        <div class="con"></div>
+        <div id="NavListMobo">
+            <div class="NavListMoboChild">
+
+                <div id="newLiTag">
+                    <input type="search" name="" id="search-box" placeholder="search">
+                    <button type="submit" class="search-btn"><img src="./img//search (1).png" alt=""
+                            width="15rem"></button>
+
+                </div>
+                <div style="margin-top: 25px;"></div>
+                <div class="NewMoboList">
+                    <a href="#" class="linkClass">
+                        <p class="active" id="HomeActiveMobo">Login</p>
+                    </a>
+
+                </div>
+
+                <div class="NewMoboList">
+                    <a href="#" class="linkClass">
+                        <p>About Us</p>
+                    </a>
+
+                </div>
+                <div class="NewMoboList">
+                    <a href="#ContactUs" class="linkClass" onclick="ToggleHam(event)" id="ContactUsATagMobo">
+                        <p>Contact Us</p>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="section" style="margin-top:10px; "></div>
+
+        <!-- footer -->
+        <!-- footer destop-->
+        <section id="footer">
+            <footer class="desFooter">
+                <div class="logo-f">
+                    <img src="https://www.putatoe.com/img/logo.png" alt="" width="40px" />
+
+                    <p class="logo">PUTATOE</p>
+
+                </div>
+                <div class="FooterFlexDiv">
+                    <div class="FooterDes">
+                        <div class="row1">
+                            <h4>Community</h4>
+                            <a href=".#">Contact</a>
+                            <a href=".#">Member</a>
+                        </div>
+                        <div class="row2">
+                            <h4>About Us</h4>
+                            <a href="./#KnowUs">Manifesto</a>
+
+                            <a href="./#work">Partner</a>
+                        </div>
+                        <div class="row4"></div>
+                    </div>
+                    <div class="FooterRightDiv">
+                        <h4 class="social">Social</h4>
+                        <div class="iconsDiv">
+                            <a href="#" class="linkClass" target="_blank">
+                                <img src="./Img/instagram.png" alt="instagram" class="IconsTag" />
+                            </a>
+                            <a href="#" class="linkClass" target="_blank">
+                                <img src="./Img/linkedin.png" alt="linkedin" class="IconsTag" />
+                            </a>
+                            <a href="#"
+                                class="linkClass" target="_blank">
+                                <img src="./Img/spotify.png" alt="spotify" class="IconsTag" />
+                            </a>
+                            <a href="#" class="linkClass"
+                                target="_blank">
+                                <img src="./Img/youtube.png" alt="youtube" class="IconsTag" />
+                            </a>
+                        </div>
+
+                        <!-- <p class="newsletter">Newsletter</p>
+              <div class="newsletterPositionDiv" id="news0">
+                  <input type="text" name="" id="newsLettrinp" placeholder="Enter Your Email" />
+                  <button class="GetStarted">Get Started</button>
+              </div> -->
+                    </div>
+                </div>
+
+                <div class="footerBottomDiv">
+                    <div class="footerBottomDivLeftDiv">
+                        <p>
+                            Made with ❤️ <br />
+                            from Putatoe solution private limited
+                        </p>
+                    </div>
+                    <div class="footerBottomDivRightDiv">
+                        <p>
+                            233 Harahawa Phatak, Near SBI Bank, Gorakhpur, Uttar Pradesh - 273001
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </section>
+
+        <!-- footer Mobo-->
+        <section id="footerMobo">
+            <footer class="MoboFooter">
+                <div class="MoboFooterLogoDiv">
+                    <div class="logo-f">
+                        <img src="https://www.putatoe.com/img/logo.png" alt="" width="40px" />
+                        <p class="logo" >PUTATOE</p>
+                    </div>
+                    <div class="iconsDiv">
+                        <a href="#" class="linkClass Hidea650" target="_blank">
+                            <img src="./Img/instagram.png" alt="instagram" class="IconsTag" />
+                        </a>
+                        <a href="#" class="linkClass Hidea650" target="_blank">
+                            <img src="./Img/linkedin.png" alt="linkedin" class="IconsTag" />
+                        </a>
+                        <a href="#"
+                            class="linkClass Hidea650" target="_blank">
+                            <img src="./Img/spotify.png" alt="spotify" class="IconsTag" />
+                        </a>
+                        <a href="#" class="linkClass Hidea650"
+                            target="_blank">
+                            <img src="./Img/youtube.png" alt="youtube" class="IconsTag" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="FooterRightDiv">
+                    <!-- <p class="newsletter">Newsletter</p>
+          <div class="newsletterPositionDiv" id="news1">
+              <input type="text" name="" id="newsLettrinp" placeholder="Enter Your Email" />
+              <button class="GetStarted">Get Started</button>
+          </div> -->
+                </div>
+                <div class="FooterFlexDiv">
+                    <div class="FooterDes">
+                        <div class="row1">
+                            <h4>Community</h4>
+                            <a href="#">Contact</a>
+                            <a href="#">Member</a>
+                        </div>
+                        <div class="row2">
+                            <h4>About Us</h4>
+                            <a href="./#KnowUs">Manifesto</a>
+
+                            <a href="./#work">Partner</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footerBottomDiv">
+                    <div class="footerBottomDivLeftDiv">
+                        <p>
+                            Made with ❤️ <br />
+                            from Putatoe solution private limited
+                        </p>
+                    </div>
+                    <div class="footerBottomDivRightDiv">
+                        <p>
+                            233 Harahawa Phatak, Near SBI Bank, Gorakhpur, Uttar Pradesh - 273001
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </div>
 </body>
 
 </html>

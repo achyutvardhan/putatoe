@@ -1,0 +1,555 @@
+.MoboFooter {
+    display: none;
+    padding: 40px;
+    background-color: var(--background-nav);
+  }
+  
+  .desFooter {
+    padding: 40px;
+    background-color: var(--background-nav);
+  }
+  
+  .logo-f,
+  .imglogo,
+  #FED,
+  .FooterDes {
+    background-color: transparent;
+  }
+  
+  .Hidea650 {
+    display: none;
+  }
+  
+  .logo-f {
+    display: flex;
+  }
+  
+  .FooterFlexDiv {
+    margin-top: 60px;
+    display: flex;
+    background-color: transparent;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .FooterDes {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+  }
+  
+  .row1,
+  .row2,
+  .row3,
+  .row4 {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+  }
+  
+  .row1 a,
+  .row2 a,
+  .row3 a,
+  .row4 a {
+    color: #afafaf;
+    background-color: transparent;
+    text-decoration: none;
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+  }
+  
+  .row1 h4,
+  .row2 h4,
+  .row3 h4,
+  .row4 h4 {
+    background-color: transparent;
+    margin-bottom: 17px;
+    color: #ffffff;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  
+  .FooterRightDiv {
+    width: 35%;
+    background-color: transparent;
+  }
+  
+  .social {
+    background-color: transparent;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 23.7px;
+    margin-bottom: 11px;
+    color: var(--border-color);
+  }
+  
+  .iconsDiv {
+    background-color: transparent;
+  }
+  
+  .IconsTag {
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
+  
+  .newsletter {
+    background-color: transparent;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23.7px;
+    margin-bottom: 16px;
+  }
+  
+  .newsletterPositionDiv {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #afafaf;
+    border-radius: 10px;
+  }
+  
+  #newsLettrinp {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 22px 0px 20px 15px;
+  }
+  
+  ::-webkit-input-placeholder {
+    font-family: "Manrope", sans-serif;
+    font-size: 19px;
+    font-weight: 700px;
+    line-height: 28px;
+  }
+  
+  :-ms-input-placeholder {
+    font-family: "Manrope", sans-serif;
+    font-size: 19px;
+    font-weight: 700px;
+    line-height: 28px;
+  }
+  
+  ::placeholder {
+    font-family: "Manrope", sans-serif;
+    font-size: 19px;
+    font-weight: 700px;
+    line-height: 28px;
+  }
+  
+  .GetStarted {
+    margin-top: 1px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    outline: none;
+    border: none;
+    text-align: center;
+    background-color: rgba(244, 87, 37, 1);
+    width: 157px;
+    height: 95%;
+    position: absolute;
+    top: 0px;
+    right: 2px;
+    border-radius: 6px;
+  }
+  
+  .footerBottomDiv {
+    background-color: inherit;
+    margin-top: 60px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    border-color: #5c5c5a;
+  }
+  
+  .footerBottomDivRightDiv,
+  .footerBottomDivLeftDiv {
+    font-family: "Manrope";
+    font-style: normal;
+    letter-spacing: 0.005em;
+    line-height: 24px;
+    max-width: 45%;
+  }
+  
+  .footerBottomDivLeftDiv {
+    font-weight: 700;
+    font-size: 15px;
+  }
+  
+  .footerBottomDivRightDiv {
+    font-weight: 400;
+    font-size: 17px;
+    text-align: right;
+  }
+  
+  .footerBottomDivRightDiv p {
+    color: #777777;
+  }
+  
+  .footerBottomDivRightDiv,
+  .footerBottomDivLeftDiv {
+    background-color: inherit;
+  }
+  .footerBottomDivRightDiv p,
+  .footerBottomDivLeftDiv p{
+    color: var(--border-color);
+  }
+  
+  .formDiv,
+  .formDivText,
+  .ContactUSDiv,
+  .ContactUSDiv p,
+  #ContactUsMobo,
+  .form {
+    background-color: transparent;
+  }
+  
+  .ContactUSDiv {
+    margin-top: 40px;
+  }
+  
+  .ContactUSDiv p {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23.7px;
+    margin-bottom: 11px;
+  }
+  
+  :root {
+    --first-color: #f45725;
+    --input-color: #80868b;
+    --border-color: #dadce0;
+    --background-nav:hsl(188, 78%, 34%);
+    --normal-font-size: 1rem;
+    --small-font-size: 0.75rem;
+  }
+  
+  .formDiv {
+    position: relative;
+    height: 48px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .formDivText {
+    position: relative;
+    height: 100px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .formInput {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: var(--normal-font-size);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    outline: none;
+    padding: 1rem;
+    background: none;
+    z-index: 1;
+  }
+  
+  .formText {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: var(--normal-font-size);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    outline: none;
+    padding: 1rem;
+    background: none;
+    z-index: 1;
+    resize: none;
+  }
+  
+  .formLabel {
+    position: absolute;
+    left: 1rem;
+    top: 12px;
+    padding: 0 0.25rem;
+    background-color: transparent;
+    color: var(--input-color);
+    font-size: var(--normal-font-size);
+    font-family: "Manrope", sans-serif;
+    transition: 0.3s;
+  }
+  
+  .formButton {
+    font-family: "Rubik", sans-serif;
+    padding: 0.75rem 2rem;
+    outline: none;
+    border: none;
+    background-color: var(--first-color);
+    font-size: var(--normal-font-size);
+    border-radius: 8px;
+    cursor: pointer;
+    height: 43px;
+    transition: 0.3s;
+  }
+  
+  .formButton:hover {
+    box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
+  }
+  
+  .formInput:focus + .formLabel,
+  .formText:focus + .formLabel {
+    top: -0.5rem;
+    left: 0.8rem;
+    color: var(--first-color);
+    font-size: var(--small-font-size);
+    font-weight: 500;
+    z-index: 2;
+    background-color: #1e1e1e;
+  }
+  
+  .formInput:not(:placeholder-shown).formInput:not(:focus) + .formLabel,
+  .formText:not(:placeholder-shown).formText:not(:focus) + .formLabel {
+    background-color: #1e1e1e;
+    top: -0.5rem;
+    left: 0.8rem;
+    font-size: var(--small-font-size);
+    font-weight: 500;
+    z-index: 2;
+  }
+  
+  .formInput:focus,
+  .formText:focus {
+    border: 1.5px solid var(--first-color);
+  }
+  
+  .popUPSucessDiv,
+  .popUPFailDiv {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 3;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popUpChildDivHome {
+    font-family: "Manrope", sans-serif;
+    text-align: center;
+    color: #f45725;
+    position: relative;
+    border-radius: 15px;
+    background-color: #0f0e0e;
+    width: 60%;
+    padding: 30px;
+    transition: all 0.3s ease-out;
+  }
+  
+  #add {
+    animation-duration: 3s;
+    animation-name: addAni;
+  }
+  
+  @keyframes addAni {
+    0% {
+      transform: scale(1.3);
+      opacity: 0;
+    }
+  
+    25% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  
+    75% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  
+    100% {
+      transform: scale(1.3);
+      opacity: 0;
+      display: none;
+    }
+  }
+  
+  /* @keyframes removeAni {
+      0% {
+          transform: scale(1);
+          opacity: 1;
+      }
+      100% {
+          transform: scale(1.3);
+          opacity: 0;
+      }
+  } */
+  
+  @media only screen and (max-width: 1150px) {
+    .FooterDes {
+      width: 40%;
+      flex-direction: column;
+    }
+  
+    .FooterRightDiv {
+      width: 50%;
+    }
+  
+    .row1 {
+      margin-bottom: 40px;
+    }
+  
+    .footerBottomDiv {
+      flex-direction: column;
+    }
+  
+    .footerBottomDivRightDiv,
+    .footerBottomDivRightDiv p,
+    .footerBottomDivLeftDiv p,
+    .footerBottomDivLeftDiv {
+      width: 100%;
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .footerBottomDivLeftDiv p {
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 720px) {
+    .FooterRightDiv {
+      width: 55%;
+    }
+  }
+  
+  @media only screen and (max-width: 650px) {
+    .desFooter {
+      display: none;
+    }
+  
+    .MoboFooter {
+      display: block;
+    }
+  
+    .MoboFooterLogoDiv {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      background-color: transparent;
+    }
+  
+    .logo-f {
+      align-items: center;
+    }
+  
+    .iconsDiv {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  
+    .IconsTag {
+      height: 24px;
+      width: 24px;
+      margin-bottom: 0px;
+    }
+  
+    .FooterRightDiv {
+      margin-top: 30px;
+      width: 100%;
+    }
+  
+    .newsletter {
+      margin-bottom: 8px;
+    }
+  
+    .GetStarted {
+      width: 107.06px;
+      font-size: 15px;
+    }
+  
+    .FooterFlexDiv {
+      margin-top: 40px;
+    }
+  
+    .Hidea650 {
+      display: block;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .iconsDiv {
+      width: 50%;
+    }
+  
+    .IconsTag {
+      margin: 0px;
+    }
+  }
+  
+  @media only screen and (max-width: 350px) {
+    .IconsTag {
+      width: 15px;
+      height: 15px;
+    }
+  
+    .GetStarted {
+      font-size: 12px;
+      width: 45%;
+    }
+  
+    ::-webkit-input-placeholder {
+      font-family: "Manrope", sans-serif;
+      font-size: 12px;
+      font-weight: 700px;
+      line-height: 28px;
+    }
+  
+    :-ms-input-placeholder {
+      font-family: "Manrope", sans-serif;
+      font-size: 12px;
+      font-weight: 700px;
+      line-height: 28px;
+    }
+  
+    ::placeholder {
+      font-family: "Manrope", sans-serif;
+      font-size: 12px;
+      font-weight: 700px;
+      line-height: 28px;
+    }
+  
+    #newsLettrinp {
+      border-radius: 10px;
+      padding: 12px 0px 12px 12px;
+    }
+  }
+  
